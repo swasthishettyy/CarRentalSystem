@@ -1,0 +1,26 @@
+2025-04-03T22:26:23.753+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-03T22:26:23.761+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-03T22:26:23.794+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 33 ms
+2025-04-03T22:26:23.843+05:30 DEBUG 6104 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/reports/download
+2025-04-03T22:26:24.121+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.service.CustomUserDetailsService   : Authenticating user: user
+2025-04-03T22:26:24.665+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.service.CustomUserDetailsService   : User found: user with role: ROLE_USER
+2025-04-03T22:26:24.968+05:30 DEBUG 6104 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-04-03T22:26:24.969+05:30 DEBUG 6104 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.s.w.a.www.BasicAuthenticationFilter  : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]
+2025-04-03T22:26:24.973+05:30 DEBUG 6104 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/reports/download
+2025-04-03T22:26:25.019+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.service.PdfReportService           : Generating PDF report for user: user
+2025-04-03T22:26:25.769+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.service.PdfReportService           : PDF report generated successfully for user: user
+2025-04-03T22:26:25.778+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.controller.PdfReportController     : Report successfully generated and sent to user: user
+2025-04-03T22:26:39.799+05:30 DEBUG 6104 --- [CarRentalApp] [http-nio-8082-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/bookings/my
+2025-04-03T22:26:39.799+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-3] c.d.C.service.CustomUserDetailsService   : Authenticating user: user1
+2025-04-03T22:26:39.803+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-3] c.d.C.service.CustomUserDetailsService   : User found: user1 with role: ROLE_USER
+2025-04-03T22:26:40.205+05:30 DEBUG 6104 --- [CarRentalApp] [http-nio-8082-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-04-03T22:26:40.206+05:30 DEBUG 6104 --- [CarRentalApp] [http-nio-8082-exec-3] o.s.s.w.a.www.BasicAuthenticationFilter  : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user1, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]
+2025-04-03T22:26:40.210+05:30 DEBUG 6104 --- [CarRentalApp] [http-nio-8082-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/bookings/my
+2025-04-03T22:26:40.214+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-3] c.d.C.controller.BookingController       : Fetching bookings for user: user1
+2025-04-03T22:26:40.215+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-3] c.d.CarRentalApp.service.BookingService  : Fetching bookings for user: user1
+2025-04-03T22:26:40.228+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-3] c.d.CarRentalApp.service.BookingService  : User user1 has 1 booking(s)
+2025-04-03T22:26:40.228+05:30  INFO 6104 --- [CarRentalApp] [http-nio-8082-exec-3] c.d.C.controller.BookingController       : Total bookings found for user1: 1
+2025-04-03T22:28:20.665+05:30  INFO 6104 --- [CarRentalApp] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-03T22:28:20.669+05:30  INFO 6104 --- [CarRentalApp] [RMI TCP Connection(6)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-03T22:28:20.683+05:30  INFO 6104 --- [CarRentalApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-03T22:28:20.688+05:30  INFO 6104 --- [CarRentalApp] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

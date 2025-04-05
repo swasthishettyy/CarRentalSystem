@@ -1,0 +1,30 @@
+2025-04-04T22:57:00.294+05:30  WARN 14908 --- [CarRentalApp] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-04T22:57:00.313+05:30  INFO 14908 --- [CarRentalApp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-04T22:57:01.093+05:30  INFO 14908 --- [CarRentalApp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-04T22:57:01.159+05:30  INFO 14908 --- [CarRentalApp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T22:57:01.494+05:30  WARN 14908 --- [CarRentalApp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04T22:57:01.512+05:30  INFO 14908 --- [CarRentalApp] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-04-04T22:57:01.749+05:30 DEBUG 14908 --- [CarRentalApp] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-04-04T22:57:01.993+05:30  INFO 14908 --- [CarRentalApp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-04-04T22:57:02.001+05:30  INFO 14908 --- [CarRentalApp] [main] c.d.C.CarRentalAppApplication            : Started CarRentalAppApplication in 4.001 seconds (process running for 4.67)
+2025-04-04T22:57:11.733+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04T22:57:11.734+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-04T22:57:11.735+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-04T22:57:11.754+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/reports/download
+2025-04-04T22:57:11.856+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.service.CustomUserDetailsService   : Authenticating user: admin2
+2025-04-04T22:57:12.027+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.service.CustomUserDetailsService   : User found: admin2 with role: ROLE_ADMIN
+2025-04-04T22:57:12.117+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-04-04T22:57:12.118+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.s.w.a.www.BasicAuthenticationFilter  : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin2, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ADMIN]]
+2025-04-04T22:57:12.122+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/reports/download
+2025-04-04T22:57:12.136+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.service.PdfReportService           : Generating PDF report for user: admin2
+2025-04-04T22:57:12.400+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.service.PdfReportService           : PDF report generated successfully for user: admin2
+2025-04-04T22:57:12.403+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-2] c.d.C.controller.PdfReportController     : Report successfully generated and sent to user: admin2
+2025-04-04T22:57:24.788+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/bookings/my
+2025-04-04T22:57:24.788+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-3] c.d.C.service.CustomUserDetailsService   : Authenticating user: user2

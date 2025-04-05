@@ -1,0 +1,17 @@
+2025-04-04T23:00:47.834+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-7] c.demo.CarRentalApp.service.CarService   : Fetching all cars
+2025-04-04T23:00:47.889+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-7] c.d.C.controller.CarController           : Total cars fetched: 15
+2025-04-04T23:01:13.416+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/payments/all
+2025-04-04T23:01:13.417+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-8] c.d.C.service.CustomUserDetailsService   : Authenticating user: admin2
+2025-04-04T23:01:13.422+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-8] c.d.C.service.CustomUserDetailsService   : User found: admin2 with role: ROLE_ADMIN
+2025-04-04T23:01:13.569+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-8] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2025-04-04T23:01:13.570+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-8] o.s.s.w.a.www.BasicAuthenticationFilter  : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin2, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_ADMIN]]
+2025-04-04T23:01:13.572+05:30 DEBUG 14908 --- [CarRentalApp] [http-nio-8082-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/payments/all
+2025-04-04T23:01:13.573+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-8] c.d.C.controller.PaymentController       : Fetching all payments...
+2025-04-04T23:01:13.573+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-8] c.d.CarRentalApp.service.PaymentService  : Fetching all payments (Admin only)
+2025-04-04T23:01:13.591+05:30  INFO 14908 --- [CarRentalApp] [http-nio-8082-exec-8] c.d.C.controller.PaymentController       : Total payments retrieved: 3
+2025-04-04T23:04:05.568+05:30  INFO 14908 --- [CarRentalApp] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-04T23:04:05.571+05:30  INFO 14908 --- [CarRentalApp] [RMI TCP Connection(9)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-04T23:04:05.584+05:30  INFO 14908 --- [CarRentalApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-04T23:04:05.588+05:30  INFO 14908 --- [CarRentalApp] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:04:05.590+05:30  INFO 14908 --- [CarRentalApp] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-04T23:04:05.599+05:30  INFO 14908 --- [CarRentalApp] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
